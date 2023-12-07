@@ -25,7 +25,9 @@ SECRET_KEY = 'django-insecure-mdqb#5l2a==^8w@_x*xub+^j@_@25izzkb1r@ms_i5f6*=0&t5
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'localhost',
+]
 
 
 # Application definition
@@ -86,7 +88,24 @@ DATABASES = {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     }
+    #   'default': {
+    #       'ENGINE': 'django.db.backends.mysql',
+    #       'NAME': 'ias_list_mysql_db',
+    #       'USER': 'tr-zJWK$ni_-H($9sG9p',
+    #       'PASSWORD': 'db$admin',
+    #       'HOST': 'localhost',
+    #       'PORT': '3306',
+    #   },
+    #   'postgresql': {
+    #       'ENGINE': 'django.db.backends.postgresql',
+    #       'NAME': 'ias_list_postgresql_db',
+    #       'USER': 'OGB~:~nM-u&0(YWaxGZK',
+    #       'PASSWORD': 'g19-CRACK$',
+    #       'HOST': 'localhost',
+    #       'PORT': '5432',
+    #   },
 }
+
 
 
 # Password validation
