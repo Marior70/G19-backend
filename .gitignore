@@ -18,4 +18,4 @@ auxiliar/
 .migrations/__pycache__
 .iasAPI/__pycache__
 # Base de datos SQLite3
-db.sqlite3
+ias_list_db.sqlite3
