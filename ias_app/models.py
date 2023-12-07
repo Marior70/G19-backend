@@ -22,7 +22,7 @@ class IaFunction(Model):
          for field in self.__class__._meta.fields[1:]
       ]
 
-class IntArt(Model):
+class Ia(Model):
    id = models.AutoField(primary_key=True)
    nombre = models.CharField(blank=False,null=False,max_length=50)
    image = models.CharField(blank=False,null=False,max_length=60)
@@ -60,9 +60,6 @@ class Comment(Model):
          (field.verbose_name, field.value_from_object(self))
          for field in self.__class__._meta.fields[1:]
       ]
-'''
-contact_name,contact_email,contact_comment, comment_date
-'''
 
 class Curso(Model):
    institucion = models.CharField(blank=False,null=False,max_length=30,default="Codo a Codo")
@@ -71,7 +68,7 @@ class Curso(Model):
    comision = models.PositiveSmallIntegerField(blank=False,null=False,default=23507)
    
    class Meta:
-      db_table = "t_curso"
+      db_table = "t_cursos"
    
    def __str__(self):
       return f"institución: {self.institucion}, curso: {self.curso}, grupo: {self.grupo}, comisión: {self.comision}"

@@ -3,8 +3,8 @@ from rest_framework.viewsets import ModelViewSet
 from .models import IaFunction
 from .serializers import IaFunctionSerializer
 
-from .models import IntArt
-from .serializers import IntArtSerializer
+from .models import Ia
+from .serializers import IaSerializer
 
 from .models import Comment
 from .serializers import CommentSerializer
@@ -19,9 +19,9 @@ class IaFunctionViewSet(ModelViewSet):
    queryset = IaFunction.objects.all()
    serializer_class = IaFunctionSerializer
 
-class IntArtViewSet(ModelViewSet):
-   queryset = IntArt.objects.all()
-   serializer_class = IntArtSerializer
+class IaViewSet(ModelViewSet):
+   queryset = Ia.objects.all()
+   serializer_class = IaSerializer
 
 class CommentViewSet(ModelViewSet):
    queryset = Comment.objects.all()

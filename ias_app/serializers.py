@@ -1,6 +1,6 @@
 from rest_framework.serializers import ModelSerializer
 from .models import IaFunction
-from .models import IntArt
+from .models import Ia
 from .models import Comment
 from .models import Curso
 from .models import Alumno
@@ -10,9 +10,9 @@ class IaFunctionSerializer(ModelSerializer):
       model = IaFunction
       fields = "__all__"
 
-class IntArtSerializer(ModelSerializer):
+class IaSerializer(ModelSerializer):
    class Meta:
-      model = IntArt
+      model = Ia
       fields = "__all__"
 
 class CommentSerializer(ModelSerializer):
