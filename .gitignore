@@ -1,0 +1,21 @@
+# Git
+.gitignore
+# REPO GITHUB
+Marior70G19-backend.git
+# Utilidades propias
+auxiliar/
+# Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/*
+# Entorno Virtual Python
+.venv/
+# Cache
+.ias_app/__pycache__
+.migrations/__pycache__
+.iasAPI/__pycache__
+# Base de datos SQLite3
+db.sqlite3
