@@ -36,6 +36,7 @@ CUSTOM_APPS = [
 ]
 EXTERNALS =[
     'rest_framework',
+    'corsheaders',
 ]
 
 INSTALLED_APPS = [
@@ -52,11 +53,42 @@ INSTALLED_APPS += CUSTOM_APPS + EXTERNALS
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+]
+
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:5000",
+    "http://localhost:8081",
+]
+
+CORS_ALLOWED_WHITELIST = [
+    "http://localhost:5000",
+    "http://localhost:8081",
+]
+
+CORS_ALLOW_METHODS = [
+    'DELETE',
+    'GET',
+    #'PATCH',
+    'POST',
+    'PUT',
+]
+
+CORS_ALLOW_HEADERS = [
+    'accept',
+    'accept-encoding',
+    'authorization',
+    'content-type',
+    'dnt',
+    'origin',
+    'user-agent',
+    'x-csrftoken',
+    'x-requested-with',
 ]
 
 ROOT_URLCONF = 'iasAPI.urls'

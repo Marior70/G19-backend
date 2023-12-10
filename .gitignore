@@ -14,7 +14,7 @@ auxiliar/
 # Entorno Virtual Python
 .venv/
 # Cache
-.ias_app/__pycache__
+.ias_app/__pycache__/
 .migrations/__pycache__
 .iasAPI/__pycache__
 # Base de datos SQLite3
