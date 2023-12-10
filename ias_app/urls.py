@@ -6,6 +6,7 @@ from .views import IntArtViewSet
 from .views import CommentViewSet
 from .views import CursoViewSet
 from .views import AlumnoViewSet
+from .views import UsuarioViewSet
 
 router = DefaultRouter()
 router.register(r'iaFunction', IaFunctionViewSet, basename='iaFunction')
@@ -13,6 +14,7 @@ router.register(r'iasList', IntArtViewSet, basename='iasList')
 router.register(r'comment', CommentViewSet, basename='comment')
 router.register(r'curso', CursoViewSet, basename='curso')
 router.register(r'alumno', AlumnoViewSet, basename='alumno')
+router.register(r'login', UsuarioViewSet, basename='login')
 
 urlpatterns = [
     path('', include(router.urls)),

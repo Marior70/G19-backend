@@ -101,3 +101,19 @@ class Alumno(Model):
          (field.verbose_name, field.value_from_object(self))
          for field in self.__class__._meta.fields[1:]
       ]
+
+class Usuario(Model):   
+   username = models.CharField(blank=False,null=False,max_length=30)
+   pasword = models.CharField(blank=False,null=False,max_length=20)
+      
+   class Meta:
+      db_table = "t_usuarios"
+   
+   def __str__(self):
+      return f"Usuario: {self.username}"
+   
+   def get_fields(self):
+      return [
+         (field.verbose_name, field.value_from_object(self))
+         for field in self.__class__._meta.fields[1:]
+      ]
