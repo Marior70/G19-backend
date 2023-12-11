@@ -15,6 +15,9 @@ from .serializers import CursoSerializer
 from .models import Alumno
 from .serializers import AlumnoSerializer
 
+from .models import Usuario
+from .serializers import UsuarioSerializer
+
 class IaFunctionViewSet(ModelViewSet):
    queryset = IaFunction.objects.all()
    serializer_class = IaFunctionSerializer
@@ -34,4 +37,7 @@ class CursoViewSet(ModelViewSet):
 class AlumnoViewSet(ModelViewSet):
     queryset = Alumno.objects.all()
     serializer_class = AlumnoSerializer
-    
+
+class UsuarioViewSet(ModelViewSet):
+    queryset = Usuario.objects.all()
+    serializer_class = UsuarioSerializer
