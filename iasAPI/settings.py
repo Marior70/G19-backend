@@ -23,12 +23,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-mdqb#5l2a==^8w@_x*xub+^j@_@25izzkb1r@ms_i5f6*=0&t5'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [
-    'localhost',
+    "https://marior70.github.io"    
 ]
-
 
 # Application definition
 CUSTOM_APPS = [
@@ -62,13 +61,11 @@ MIDDLEWARE = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:5000",
-    "http://localhost:8081",
+    "https://marior70.github.io",
 ]
 
 CORS_ALLOWED_WHITELIST = [
-    "http://localhost:5000",
-    "http://localhost:8081",
+    "https://marior70.github.io",
 ]
 
 CORS_ALLOW_METHODS = [
@@ -116,26 +113,16 @@ WSGI_APPLICATION = 'iasAPI.wsgi.application'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
 DATABASES = {
+
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'ias_list_db.sqlite3',
-    }
-    #   'default': {
-    #       'ENGINE': 'django.db.backends.mysql',
-    #       'NAME': 'ias_list_mysql_db',
-    #       'USER': 'tr-zJWK$ni_-H($9sG9p',
-    #       'PASSWORD': 'db$admin',
-    #       'HOST': 'localhost',
-    #       'PORT': '3306',
-    #   },
-    #   'postgresql': {
-    #       'ENGINE': 'django.db.backends.postgresql',
-    #       'NAME': 'ias_list_postgresql_db',
-    #       'USER': 'OGB~:~nM-u&0(YWaxGZK',
-    #       'PASSWORD': 'g19-CRACK$',
-    #       'HOST': 'localhost',
-    #       'PORT': '5432',
-    #   },
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'grupo19$ias_list_mysql_db',
+        'USER': 'grupo19',
+        'PASSWORD': 'db$admin',
+        'HOST': 'grupo19.mysql.pythonanywhere-services.com',
+        'PORT': '3306',
+    },
+
 }
 
 

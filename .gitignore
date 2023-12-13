@@ -1,4 +1,4 @@
- Git
+#Git
 .gitignore
 # REPO GITHUB
 Marior70G19-backend.git
@@ -19,3 +19,5 @@ auxiliar/
 .iasAPI/__pycache__
 # Base de datos SQLite3
 ias_list_db.sqlite3
+# Datos para cargar db
+QueryTo_ias_list_db.md
