@@ -118,7 +118,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'grupo19$ias_list_mysql_db',
         'USER': 'grupo19',
-        'PASSWORD': 'db$admin',
+        'PASSWORD': '*********************',
         'HOST': 'grupo19.mysql.pythonanywhere-services.com',
         'PORT': '3306',
     },
