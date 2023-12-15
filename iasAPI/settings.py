@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-mdqb#5l2a==^8w@_x*xub+^j@_@25izzkb1r@ms_i5f6*=0&t5
 DEBUG = False
 
 ALLOWED_HOSTS = [
-    "https://marior70.github.io"    
+    "https://grupo19.pythonanywhere.com"    
 ]
 
 # Application definition
@@ -61,11 +61,11 @@ MIDDLEWARE = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    "https://marior70.github.io",
+    "https://marior70.github.io/G19-frondend",
 ]
 
 CORS_ALLOWED_WHITELIST = [
-    "https://marior70.github.io",
+    "https://marior70.github.io/G19-frontend",
 ]
 
 CORS_ALLOW_METHODS = [
